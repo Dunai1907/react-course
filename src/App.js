@@ -33,6 +33,7 @@ function App() {
 
     async function fetchPosts() {
         const response = await axios.get("https://jsonplaceholder.typicode.com/posts");
+        console.log(response.data);
         setPosts(response.data);
     }
 
